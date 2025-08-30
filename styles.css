@@ -1,39 +1,63 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.hero{
-    width: 40px;
-    height: 30px;
-}
-.hero2{
-
-    padding-left: 1230px ;
-    padding-top: 200px;
-
-}
-.hero3{
-     padding-left: 1200px;
-     padding-top: 20px;
-
-}
-.hero4{
-    padding-left: 80px;
+body {
+  font-family: Arial, sans-serif;
 }
 
-.hero5{
-
-    border: solid white;
-    background-color: red;
-    color: white;
-    width: 100px;
-    margin-left: 1250px;
-    text-align: center;
-    height: 30px;
-    margin-top: 20px;
-    padding-top: 10px;
-    border-radius: 5px;
+/* Container for hero section */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;   /* full screen */
 }
+
+/* Left side image */
+.hero-image img {
+  width: 600px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Right side text */
+.hero-text {
+  margin-left: 40px;
+  max-width: 400px;
+}
+
+.hero-text .dot {
+  color: red;
+  font-size: 30px;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Button */
+.hero-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-btn:hover {
+  background-color: darkred;
+}
+
