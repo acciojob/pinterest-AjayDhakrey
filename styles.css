@@ -1,1 +1,39 @@
-/*  your css code here. If applicable */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.hero{
+    width: 40px;
+    height: 30px;
+}
+.hero2{
+
+    padding-left: 1230px ;
+    padding-top: 200px;
+
+}
+.hero3{
+     padding-left: 1200px;
+     padding-top: 20px;
+
+}
+.hero4{
+    padding-left: 80px;
+}
+
+.hero5{
+
+    border: solid white;
+    background-color: red;
+    color: white;
+    width: 100px;
+    margin-left: 1250px;
+    text-align: center;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
