@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -17,12 +18,20 @@ body {
   padding: 20px;
 }
 
-/* Left side image */
-.hero-image img {
+/* Left side image wrapper */
+.hero-image {
   width: 600px;
   height: 400px;
-  object-fit: cover;   /* ✅ ensures Cypress test passes */
+  overflow: hidden;   /* ensures image stays inside the box */
+}
+
+/* Image itself */
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;  /* ✅ Cypress expects this */
   border-radius: 8px;
+  display: block; /* removes inline white gaps */
 }
 
 /* Right side text */
@@ -48,7 +57,7 @@ body {
   color: #333;
 }
 
-/* Button */
+/* Button (or <a>) */
 .hero-btn {
   display: inline-block;
   padding: 10px 20px;
